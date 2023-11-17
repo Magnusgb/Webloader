@@ -1,0 +1,134 @@
+:root {
+    --bg-matblack: #363635;
+    --bg-silver:#C2C1C2;
+    --sec-in-mar: auto; /* Margin-inline: auto; Centerer en div/id i forhold til plads givet af width*/
+    --sec-width: min(50%); /*Giver white space i siderne*/
+    --sec-pad: 25rem 0; /* Giver white space på toppen bruges til sektioner for at give white space*/
+
+    /* Fontsizes base */
+    --fs-xl: 5rem;
+    --fs-l: clamp(1rem, 10vw + 1rem, 3.5rem);
+    --fs-m: 2rem;
+    --fs-s: 1rem;
+}
+
+ /* Fontsizes responsivt */ /*
+@media (min-width:768px) {
+    :root {
+    --fs-l: 5rem;
+    --fs-m: clamp(1rem, 5vw + 1rem, 3.5rem);
+    --fs-s: 1.5rem;
+}
+    }
+*/
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+.bg-silver {
+background-color: var(--bg-silver);
+height: 100vh;
+width: 50vw;
+}
+
+.bg-mat {
+    background-color: var(--bg-matblack);
+    height: 100vh;
+    width: 50vw;
+}
+
+.intro {
+    display: flex;
+}
+
+
+.bg-mat {
+    padding: var(--sec-pad);
+    text-align: center;
+    }
+
+
+.bg-silver {
+    padding: var(--sec-pad);
+    text-align: center;
+}
+
+h1, ul, li {
+    font-family: "forma-djr-display", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--bg-silver);
+    font-size: var(--fs-xl);
+    line-height: 1;
+    }
+    
+    h2 {
+        font-family: "forma-djr-display", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: var(--bg-matblack);
+        font-size: var(--fs-xl);
+        line-height: 1;
+        }
+    
+nav li, ul {
+    color:black;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+body {
+    background-color: var(--bg-matblack);
+}
+
+h1 {
+font-family: "forma-djr-display", sans-serif;
+font-weight: 700;
+font-style: normal;
+color: var(--bg-matblack);
+font-size: var(--fs-xl);
+line-height: 1;
+}
+
+h2 {
+    font-family: "forma-djr-display", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--bg-matblack);
+    font-size: var(--fs-m);
+    line-height: 1;
+    }
+
+
+
+
+.intro {
+    background-color: var(--bg-silver);
+    padding: var(--sec-pad);
+    margin-inline: var(--sec-in-mar);
+    cursor:var(--bg-matblack)
+}
+
+.intro h1, h2 {
+text-align: center;
+}
+*/
+
+
